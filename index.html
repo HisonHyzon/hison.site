@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hison Group</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            height: 100vh;
-            background: url('1DDEB370-2B0A-4CB2-B260-ED6A8967FC0A.jpeg') no-repeat center center fixed;
+            font-family: Arial, sans-serif;
+            background: url('your-background-image.jpg') no-repeat center center fixed;
             background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-        .square-container {
-            background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
-            padding: 40px;
-            width: 90%;
+
+        .overlay-box {
+            background-color: rgba(255, 255, 255, 0.9);
             max-width: 600px;
-            border-radius: 15px;
+            margin: 10% auto;
+            padding: 40px;
+            border-radius: 10px;
             text-align: center;
         }
-        h1 {
-            color: white;
-            font-size: 36px;
+
+        .hison-group {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: black;
+        }
+
+        .estimated-date {
+            margin-top: 20px;
+            font-size: 18px;
             font-weight: bold;
         }
-        p {
-            color: white;
-            font-size: 18px;
-            margin: 10px 0;
-        }
+
         .discord-btn {
             background-color: #7289da;
             color: white;
@@ -47,21 +47,18 @@
             justify-content: center;
             margin-top: 20px;
         }
+
         .discord-btn img {
             width: 20px;
             height: 20px;
             margin-right: 10px;
         }
+
         .discord-btn:hover {
             background-color: #5b6eae;
         }
-        .estimated-date {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #ffcc00;
-        }
     </style>
+
     <!-- Tawk.to Script -->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -76,14 +73,13 @@
     </script>
 </head>
 <body>
-    <div class="square-container">
-        <h1>Hison Group</h1>
-        <p>This site is still under construction</p>
+    <div class="overlay-box">
+        <h1 class="hison-group">Hison Group</h1>
+        <p>This site is still under construction.</p>
         <p>Join us now on our Discord for updates and support!</p>
         <a href="https://discord.gg/hisonairways" class="discord-btn" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Discord_logo_2023.svg" alt="Discord Logo"> Join Us on Discord
         </a>
-        <p>For support, feel free to contact us via the chat widget below.</p>
         <p class="estimated-date">Estimated website completion date: May 10th</p>
     </div>
 </body>

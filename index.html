@@ -2,99 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hison Group</title>
-  <link rel="icon" type="image/gif" href="https://media.discordapp.net/attachments/1267724815414857871/1358590162615013616/HQ_LOGO_BLUE.gif" />
+  <link rel="icon" href="https://media.discordapp.net/attachments/1267724815414857871/1358590162615013616/HQ_LOGO_BLUE.gif" type="image/gif">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
       background: url('https://media.discordapp.net/attachments/1267724815414857871/1358588161743126719/Screenshot_2025-02-18_192551.png') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
-      height: 100vh;
+    }
+
+    header {
+      background: rgba(255,255,255,0.95);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      height: 85vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 50px;
-      border-radius: 15px;
-      max-width: 700px;
-      width: 90%;
-    }
-
-    h1 {
-      font-size: 3em;
+    .hero h2 {
+      font-size: 48px;
       margin-bottom: 20px;
-      color: #ffffff;
     }
 
-    p {
-      font-size: 1.2em;
-      margin: 10px 0;
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
     }
 
-    .btn {
-      margin-top: 30px;
-      padding: 12px 25px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background-color: #7289da;
-      color: white;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
+    .section {
+      background: white;
+      padding: 60px 40px;
+      text-align: center;
     }
 
-    .btn:hover {
-      background-color: #5b6eae;
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #f5f5f5;
+      padding: 30px;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
+      background: #222;
+      color: white;
       text-align: center;
+      padding: 30px 20px;
       font-size: 14px;
-      color: #ccc;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-
-      .overlay {
-        padding: 30px 20px;
-      }
+    footer a {
+      color: #aaa;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>Welcome to Hison Group</h1>
-    <p>Your gateway to innovation, travel, and technology.</p>
-    <p>Our site is currently under construction.</p>
-    <a href="https://discord.gg/hisonairways" class="btn" target="_blank">Join Our Discord</a>
-    <p style="margin-top: 20px;">Estimated website launch: <strong>May 10th</strong></p>
-  </div>
 
-  <footer>
-    &copy; 2025 Hison Group. All rights reserved.
-  </footer>
-
-  <!-- Tawk.to Script -->
+  <!-- Tawk.to Chat Script -->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
@@ -103,6 +116,55 @@
       s1.src = 'https://embed.tawk.to/67f1e374022675190e674b6d/1io4e0vud';
       s1.charset = 'UTF-8';
       s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Hison Group</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Brands</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Hison Group</h2>
+    <p>We power the skies with innovation and excellence. Discover our group of brands, partnerships and projects crafted to elevate your journey.</p>
+  </section>
+
+  <section class="section">
+    <h3>Our Brands</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Hison Airways</h4>
+        <p>Flagship virtual airline redefining air travel experiences.</p>
+      </div>
+      <div class="card">
+        <h4>LeafyAir</h4>
+        <p>Eco-friendly skies with smooth regional connections.</p>
+      </div>
+      <div class="card">
+        <h4>FizzyJet</h4>
+        <p>Affordable flights without compromise. Your bubbly low-cost carrier.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Hison Group. All rights reserved. | 
+    <a href="#">Privacy</a> |
+    <a href="#">Terms</a>
+  </footer>
+
+</body>
+</html>
+  <!-- Tawk.to Script -->
+  <script type="text/sorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>

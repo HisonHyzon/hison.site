@@ -4,83 +4,166 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hison Group</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('https://cdn.discordapp.com/attachments/1062179252752910387/1123812294193997884/discord-wallpaper.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 30px;
+      width: 280px;
+      backdrop-filter: blur(10px);
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">Hison Group</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#airlines">Our Airlines</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+  <nav>
+    <div class="logo">Hison Group</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#airlines">Airlines</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Hison Group</h1>
-      <p>Shaping the future of aviation across the Pacific and beyond.</p>
+    <h1>Welcome to Hison Group</h1>
+    <p>Innovating the future of aviation with Hison Airways, FIJIJET, and Aurea</p>
+  </section>
+
+  <section class="cards" id="airlines">
+    <div class="card">
+      <h3>Hison Airways</h3>
+      <p>Premium international travel with reliability and comfort at the core.</p>
+    </div>
+    <div class="card">
+      <h3>FIJIJET</h3>
+      <p>Experience Pacific spirit with our regional and island-focused airline.</p>
+    </div>
+    <div class="card">
+      <h3>Aurea</h3>
+      <p>Australia’s next-gen domestic carrier with a focus on efficiency and service.</p>
     </div>
   </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Hison Group is a leading aviation brand managing Hison Airways, FIJIJET, and Aurea. We are committed to innovation, efficiency, and premium service across all our subsidiaries.</p>
-    </div>
-  </section>
-
-  <section class="airlines" id="airlines">
-    <div class="container">
-      <h2>Our Airlines</h2>
-      <div class="airline-grid">
-        <div class="card">
-          <img src="hison-airways.png" alt="Hison Airways" />
-          <h3>Hison Airways</h3>
-        </div>
-        <div class="card">
-          <img src="fijijet.png" alt="FIJIJET" />
-          <h3>FIJIJET</h3>
-        </div>
-        <div class="card">
-          <img src="aurea.png" alt="Aurea" />
-          <h3>Aurea</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="news" id="news">
-    <div class="container">
-      <h2>Latest News</h2>
-      <p>Stay up to date with our latest innovations and route expansions. More updates coming soon.</p>
-    </div>
-  </section>
-
-  <footer class="footer" id="contact">
-    <div class="container">
-      <p>&copy; 2025 Hison Group. All rights reserved.</p>
-      <p><a href="mailto:support@hison.site">support@hison.site</a></p>
-    </div>
+  <footer id="contact">
+    <p>&copy; 2025 Hison Group. All rights reserved.</p>
+    <p><a href="mailto:support@hison.site" style="color: #ccc;">support@hison.site</a></p>
   </footer>
 
-  <!-- Tawk.to chat -->
+  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function() {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/your-tawk-id/default';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/67f37114e2ed98190b2397f8/1io7f3e4r';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
+  <!--End of Tawk.to Script-->
+
 </body>
 </html>

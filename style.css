@@ -1,127 +1,101 @@
-/* Reset some defaults */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: url('https://media.discordapp.net/attachments/1267724815414857871/1358590162615013616/HQ_LOGO_BLUE.gif?ex=67f46530&is=67f313b0&hm=0bec45f2e0088ed705951612616ed99dfc46f805a56140f005c3bc218a6071c7&') no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
+  line-height: 1.6;
+  color: #111;
+  background: #f9f9f9;
 }
 
-/* Header */
-header {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 1rem 2rem;
+/* Navbar */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+.navbar .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 20px;
 }
-
-header h1 {
-  font-size: 1.8rem;
+.navbar .logo {
+  font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: #e40000;
 }
-
-nav {
+.nav-links {
+  list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 20px;
 }
-
-nav a {
-  color: #ffffff;
+.nav-links a {
   text-decoration: none;
+  color: #333;
   font-weight: 500;
-  transition: 0.3s ease;
-}
-
-nav a:hover {
-  color: #FF3A3A;
 }
 
 /* Hero Section */
 .hero {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 4rem 2rem;
-  text-align: center;
-  backdrop-filter: blur(5px);
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #ddd;
-  margin-bottom: 2rem;
-}
-
-.hero .cta-button {
-  background-color: #FF3A3A;
+  background: url('https://media.discordapp.net/attachments/1267724815414857871/1358590162615013616/HQ_LOGO_BLUE.gif') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
 }
-
-.hero .cta-button:hover {
-  background-color: #cc2e2e;
-}
-
-/* Section Titles */
-.section-title {
-  font-size: 2rem;
+.hero-content {
   text-align: center;
-  color: white;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
 }
 
-/* Info Sections */
-.section {
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 2rem;
-  margin: 2rem auto;
-  width: 90%;
+/* Section Layout */
+section {
+  padding: 60px 20px;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Airlines */
+.airline-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background: white;
   border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
 }
-
-.section h3 {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.section p {
-  color: #ccc;
-  font-size: 1rem;
+.card img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Footer */
-footer {
+.footer {
+  background: #111;
+  color: #fff;
   text-align: center;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #999;
-  font-size: 0.9rem;
+  padding: 30px 20px;
 }
-
-/* Tawk.to */
-#tawkto-widget {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 9999;
+.footer a {
+  color: #fff;
+  text-decoration: none;
 }

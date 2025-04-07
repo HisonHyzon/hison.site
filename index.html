@@ -2,73 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hison Group</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-
-  <!-- Header/Nav -->
-  <header>
-    <h1>Hison Group</h1>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#airlines">Our Airlines</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Hison Group</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#airlines">Our Airlines</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h2>Welcome to Hison Group</h2>
-    <p>Hison Airways • FIJIJET • Aurea</p>
-    <a href="https://discord.gg/yourdiscord" class="cta-button">Join Our Discord</a>
+    <div class="hero-content">
+      <h1>Welcome to Hison Group</h1>
+      <p>Shaping the future of aviation across the Pacific and beyond.</p>
+    </div>
   </section>
 
-  <!-- About Us -->
-  <section class="section" id="about">
-    <h3>About Us</h3>
-    <p>Hison Group is a forward-thinking aviation company bringing innovative, efficient, and regional travel to the skies with our family of airlines: Hison Airways, FIJIJET, and Aurea.</p>
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Hison Group is a leading aviation brand managing Hison Airways, FIJIJET, and Aurea. We are committed to innovation, efficiency, and premium service across all our subsidiaries.</p>
+    </div>
   </section>
 
-  <!-- Airlines -->
-  <section class="section" id="airlines">
-    <h3>Our Airlines</h3>
-    <p><strong>Hison Airways:</strong> Your premium experience across Asia-Pacific.</p>
-    <p><strong>FIJIJET:</strong> Bringing tropical vibes and affordable fares across the South Pacific.</p>
-    <p><strong>Aurea:</strong> Connecting Australia’s regions with reliable and stylish service.</p>
+  <section class="airlines" id="airlines">
+    <div class="container">
+      <h2>Our Airlines</h2>
+      <div class="airline-grid">
+        <div class="card">
+          <img src="hison-airways.png" alt="Hison Airways" />
+          <h3>Hison Airways</h3>
+        </div>
+        <div class="card">
+          <img src="fijijet.png" alt="FIJIJET" />
+          <h3>FIJIJET</h3>
+        </div>
+        <div class="card">
+          <img src="aurea.png" alt="Aurea" />
+          <h3>Aurea</h3>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- News -->
-  <section class="section" id="news">
-    <h3>News & Updates</h3>
-    <p>Check back soon for the latest updates from across the Hison network!</p>
+  <section class="news" id="news">
+    <div class="container">
+      <h2>Latest News</h2>
+      <p>Stay up to date with our latest innovations and route expansions. More updates coming soon.</p>
+    </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h3>Contact Us</h3>
-    <p>Need support or want to partner with us? Reach out on Discord or use the live chat below.</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Hison Group. All rights reserved.
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p>&copy; 2025 Hison Group. All rights reserved.</p>
+      <p><a href="mailto:support@hison.site">support@hison.site</a></p>
+    </div>
   </footer>
 
-  <!-- Tawk.to Live Chat -->
+  <!-- Tawk.to chat -->
   <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/YOUR_WIDGET_ID_HERE/1random';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function() {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/your-tawk-id/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
   })();
   </script>
-
 </body>
 </html>

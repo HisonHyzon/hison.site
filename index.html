@@ -2,112 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hison Group</title>
-  <link rel="icon" href="https://media.discordapp.net/attachments/1267724815414857871/1358590162615013616/HQ_LOGO_BLUE.gif" type="image/gif">
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1225996480470898769/1226738579901560932/488896A8-158B-40A8-988B-5FA802856351.jpeg" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #222;
-      background: url('https://media.discordapp.net/attachments/1267724815414857871/1358588161743126719/Screenshot_2025-02-18_192551.png') no-repeat center center fixed;
+      background: url('https://media.discordapp.net/attachments/1267724815414857871/1358590162615013616/HQ_LOGO_BLUE.gif') no-repeat center center fixed;
       background-size: cover;
+      color: #fff;
     }
 
     header {
-      background: rgba(255,255,255,0.95);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 24px;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px;
     }
 
     nav a {
-      margin-left: 20px;
+      color: white;
       text-decoration: none;
-      color: #333;
-      font-weight: 500;
+      font-weight: bold;
+      transition: color 0.3s;
     }
 
-    .hero {
-      height: 85vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.85);
+    nav a:hover {
+      color: #f7941d;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.7);
       padding: 40px;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-    }
-
-    .section {
-      background: white;
-      padding: 60px 40px;
-      text-align: center;
-    }
-
-    .section h3 {
-      font-size: 32px;
-      margin-bottom: 30px;
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .card {
-      background: #f5f5f5;
-      padding: 30px;
       border-radius: 10px;
-      width: 280px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: all 0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    section h2 {
+      color: #f7941d;
+      margin-top: 0;
     }
 
     footer {
-      background: #222;
-      color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.9);
       font-size: 14px;
     }
 
     footer a {
-      color: #aaa;
-      margin: 0 10px;
+      display: inline-block;
+      background-color: #7289da;
+      color: white;
+      padding: 10px 20px;
       text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    footer a:hover {
+      background-color: #5b6eae;
     }
   </style>
 
-  <!-- Tawk.to Chat Script -->
+  <!-- Tawk.to Live Chat -->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
@@ -123,50 +96,44 @@
 <body>
 
   <header>
-    <h1>Hison Group</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Brands</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>Welcome to Hison Group</h1>
   </header>
 
-  <section class="hero">
-    <h2>Welcome to Hison Group</h2>
-    <p>We power the skies with innovation and excellence. Discover our group of brands, partnerships and projects crafted to elevate your journey.</p>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#airlines">Our Airlines</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Hison Group is a forward-thinking aviation brand, committed to redefining regional and international travel across the virtual skies. We are driven by innovation, customer experience, and aviation excellence.</p>
   </section>
 
-  <section class="section">
-    <h3>Our Brands</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Hison Airways</h4>
-        <p>Flagship virtual airline redefining air travel experiences.</p>
-      </div>
-      <div class="card">
-        <h4>LeafyAir</h4>
-        <p>Eco-friendly skies with smooth regional connections.</p>
-      </div>
-      <div class="card">
-        <h4>FizzyJet</h4>
-        <p>Affordable flights without compromise. Your bubbly low-cost carrier.</p>
-      </div>
-    </div>
+  <section id="airlines">
+    <h2>Our Airlines</h2>
+    <ul>
+      <li><strong>Hison Airways</strong> – Global excellence in full-service aviation.</li>
+      <li><strong>FIJIJET</strong> – A fresh Pacific experience, flying island-style.</li>
+      <li><strong>Aurea</strong> – Regional and domestic service tailored for Australia.</li>
+    </ul>
+  </section>
+
+  <section id="news">
+    <h2>News & Updates</h2>
+    <p>Stay tuned! Big announcements coming soon as we expand routes, services, and experiences across all our brands.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Need support or want to partner with us? Reach out via the Tawk.to live chat in the corner, or join us on our <a href="https://discord.gg/hisonairways" target="_blank" style="color:#7289da;">Discord server</a>.</p>
   </section>
 
   <footer>
-    &copy; 2025 Hison Group. All rights reserved. | 
-    <a href="#">Privacy</a> |
-    <a href="#">Terms</a>
+    <a href="https://discord.gg/hisonairways" target="_blank">Join Our Discord</a>
+    <p>&copy; 2025 Hison Group. All rights reserved.</p>
   </footer>
 
-</body>
-</html>
-  <!-- Tawk.to Script -->
-  <script type="text/sorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
 </body>
 </html>

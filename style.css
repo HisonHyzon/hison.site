@@ -1,4 +1,4 @@
-/* Reset & base styles */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
@@ -6,58 +6,122 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #111;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://media.discordapp.net/attachments/1267724815414857871/1358590162615013616/HQ_LOGO_BLUE.gif?ex=67f46530&is=67f313b0&hm=0bec45f2e0088ed705951612616ed99dfc46f805a56140f005c3bc218a6071c7&') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #000;
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #FF3A3A;
+}
+
+/* Hero Section */
+.hero {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
-p {
+.hero p {
   font-size: 1.2rem;
+  color: #ddd;
   margin-bottom: 2rem;
 }
 
-a.discord-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  background-color: #5865F2;
+.hero .cta-button {
+  background-color: #FF3A3A;
   color: white;
-  font-weight: bold;
-  padding: 12px 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: #cc2e2e;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* Info Sections */
+.section {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
   border-radius: 8px;
-  transition: background 0.3s ease;
 }
 
-a.discord-button:hover {
-  background-color: #4752c4;
+.section h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-a.discord-button img {
-  width: 20px;
-  height: 20px;
+.section p {
+  color: #ccc;
+  font-size: 1rem;
 }
 
-/* Small screens */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
-  }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #999;
+  font-size: 0.9rem;
+}
 
-  p {
-    font-size: 1rem;
-  }
+/* Tawk.to */
+#tawkto-widget {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
 }
